@@ -1,6 +1,6 @@
 ---
 title: "Simulation-based inference - confidence intervals"
-author: ""
+author: "Rory Smith"
 date: "March 3, 2021"
 output: html_document
 editor_options: 
@@ -28,6 +28,11 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 ```{r packages}
 library(tidyverse)
 library(infer)
+```
+
+```{r}
+library(usethis)
+use_git_config(user.name = "roryqsmith", user.email = "rory.smith@duke.edu")
 ```
 
 ## Big picture
@@ -227,6 +232,8 @@ population %>%
 
 Did everyone get the same value? If fact, each time you sample (run the above
 code chunk) you will most likely get a slightly different mean. (Please ignore impossible values.)
+
+I got 21.5, and not everyone in the class got the same answer.
 
 The mean is not unique to this phenomenon. There will be variability for
 all of the sample statistics we'll be using to produce confidence intervals.
